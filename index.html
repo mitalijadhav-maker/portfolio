@@ -121,32 +121,7 @@
             color: #667eea;
         }
 
-        .achievements {
-            background: #f0f4ff;
-            padding: 25px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-
-        .achievements li {
-            margin: 15px 0;
-            margin-left: 20px;
-            padding-left: 15px;
-            color: #555;
-            list-style: none;
-            position: relative;
-        }
-
-        .achievements li:before {
-            content: "★";
-            color: #764ba2;
-            font-weight: bold;
-            margin-right: 10px;
-            position: absolute;
-            left: 0;
-        }
-
-                .projects-grid {
+        .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
@@ -220,6 +195,31 @@
             padding: 5px 10px;
             border-radius: 15px;
             font-size: 0.85em;
+        }
+
+        .achievements {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .achievements li {
+            margin: 15px 0;
+            margin-left: 20px;
+            padding-left: 15px;
+            color: #555;
+            list-style: none;
+            position: relative;
+        }
+
+        .achievements li:before {
+            content: "★";
+            color: #764ba2;
+            font-weight: bold;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
         }
 
         .certifications {
@@ -341,6 +341,10 @@
             section h2 {
                 font-size: 1.5em;
             }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -348,7 +352,8 @@
     <div class="container">
         <!-- Header -->
         <header>
-            <h1>👋 Welcome to My Portfolio</h1>
+            <h1>👋 Welcome to Mitali Jadhav's Portfolio</h1>
+            <p class="about-intro">Hi! I'm <strong>Mitali Jadhav</strong>, a dedicated <strong>Program Manager</strong> with PMP certification, specializing in <strong>Solution Delivery</strong> and project excellence.</p>
         </header>
 
         <!-- About Me -->
@@ -356,7 +361,7 @@
             <h2>🚀 About Me</h2>
             <ul class="about-list">
                 <li><strong>PMP Certified</strong> Program Manager with expertise in solution delivery</li>
-                <li>5 years Experienced in managing complex projects and cross-functional teams</li>
+                <li>Experienced in managing complex projects and cross-functional teams</li>
                 <li>Focused on driving project success, stakeholder satisfaction, and organizational goals</li>
                 <li>Skilled in Agile, Waterfall, and Hybrid methodologies</li>
                 <li>Passionate about process optimization and team collaboration</li>
@@ -385,13 +390,30 @@
                 <li><strong>Process Areas:</strong> Requirements Management, Stakeholder Engagement, Budget & Resource Planning</li>
             </ul>
         </section>
-        
-        <h4>My Projects</h4>
-            <ul class="competencies-list">
-                <li><strong>Sprint burndown:</strong> Py script to extract precise burndown chart</li>
-                <li><strong>Scrum assistant:</strong> Created a agent through Rovo.AI</li>
-                <li><strong>Working on:</strong> PG/NB banks integrations with NPCI</li>
-            </ul>
+
+        <!-- Featured Projects Section -->
+        <section>
+            <h2>💼 Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>📊 Hourly/Half-Hourly Settlements</h4>
+                    <p class="project-role">Program Manager</p>
+                    <p class="project-description">Led the implementation of a new settlement cycle as VAS for merchants, enabling faster and more frequent payment processing.</p>
+                    <div class="project-details">
+                        <div class="project-detail-item">
+                            <strong>🎯 Key Achievement</strong>
+                            <span>Delivered within 6 months on schedule</span>
+                        </div>
+                        <div class="project-detail-item">
+                            <strong>🛠️ Tools Used</strong>
+                            <div class="tools-list">
+                                <span class="tool-badge">Jira</span>
+                                <span class="tool-badge">Agile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Key Achievements -->
